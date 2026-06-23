@@ -1025,7 +1025,7 @@ section {
 #rsvp {
   padding: 80px 20px;
   /* background: var(--cream); */
-  background: url("/rsvp.png") center center no-repeat;
+  background: url("./rsvp.png") center center no-repeat;
   text-align: center;
 }
 .rsvp-inner {
