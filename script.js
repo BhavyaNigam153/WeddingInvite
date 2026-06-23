@@ -1,9 +1,9 @@
 // LOADING
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    document.getElementById("loading").classList.add("done");
-  }, 800);
-});
+// window.addEventListener("load", () => {
+//   setTimeout(() => {
+//     document.getElementById("loading").classList.add("done");
+//   }, 800);
+// });
 
 // PETALS
 const pc = document.getElementById("petals");
