@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Cinzel:wght@400;600;700&family=Dancing+Script:wght@400;600;700&family=Noto+Serif+Devanagari:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- <div id="loading">
+      <div class="load-mandala"></div>
+      <div class="load-text">LOADING...</div>
+    </div> -->
+
+    <!-- FLOATING PETALS -->
+    <div class="petal-container" id="petals"></div>
+
+    <!-- NAV DOTS -->
+    <div class="nav-dots" id="navDots">
+      <div class="nav-dot active" data-section="hero" title="Invitation"></div>
+      <div class="nav-dot" data-section="save-date" title="Save the Date"></div>
+      <div class="nav-dot" data-section="countdown" title="Countdown"></div>
+      <div class="nav-dot" data-section="events" title="Events"></div>
+      <div class="nav-dot" data-section="family" title="Family"></div>
+      <div class="nav-dot" data-section="rsvp" title="RSVP"></div>
+    </div>
+
+    <!-- BACK TO TOP -->
+    <div
+      id="back-top"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    >
+      ↑
+    </div>
+
+    <!-- ENVELOPE SCREEN -->
+    <div id="envelope-screen">
+      <div class="env-bg" id="envBg"></div>
+      <div class="envelope-wrap" onclick="openEnvelope()">
+        <div class="envelope" id="envelopeEl">
+          <div class="env-body">
+            <div class="env-pattern"></div>
+            <div class="env-card-reveal" id="envCard">
+              <p class="env-card-names">Ashruti ❤ Shubham</p>
+            </div>
+          </div>
+          <div class="env-flap" id="envFlap"></div>
+          <div class="env-seal" id="envSeal">
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+              <text
+                y="28"
+                x="50%"
+                text-anchor="middle"
+                font-size="26"
+                fill="#E8C97A"
+                font-family="serif"
+              >
+                ॐ
+              </text>
+            </svg>
+          </div>
+        </div>
+        <div class="env-label">TAP TO REVEAL</div>
+        <div class="env-sublabel">YOUR INVITATION AWAITS</div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main">
+      <!-- <div class="top-border"></div> -->
+
+      <!-- HERO -->
+      <section id="hero">
+        <div class="hero-frame fade-up">
+          <span class="corner-orn tl">❧</span>
+          <span class="corner-orn tr">❧</span>
+          <span class="corner-orn bl">❧</span>
+          <span class="corner-orn br">❧</span>
+          <div class="hindi-heading1">॥ श्री गणेशाय नमः ॥</div>
+          <div class="hindi-heading2 hindi-heading21">
+            श्री वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।
+          </div>
+          <div class="hindi-heading2">
+            निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥
+          </div>
+          <div class="section-divider">✦ ✦ ✦</div>
+          <div class="hero-title">Wedding Invitation</div>
+          <div class="floral-sep">⸻✿⸻</div>
+          <div class="ganesh-frame">
+            <img
+              class="ganesh-img"
+              src="/ganeshji.png"
+              alt="Lord Ganesha"
+              onerror="
+                this.style.background =
+                  'linear-gradient(135deg,#C9A84C,#8B6914)';
+                this.src = '';
+              "
+            />
+            <div class="ganesh-ring"></div>
+          </div>
+          <div class="floral-sep">✿ ❀ ✿</div>
+          <div class="names-section">
+            <div class="groom-name">Ashruti Nigam</div>
+            <div class="sub-names">
+              Grand D/O Late Smt. Shashi Nigam & Late Shri K.P. Nigam
+            </div>
+            <div class="ampersand">❧ &amp; ❧</div>
+            <div class="bride-name">Shubham Saxena</div>
+            <div class="sub-names">
+              Grand S/O Late Smt. Leela Kumari Saxena & Late Shri Shiv Narayan
+              Lal Saxena
+            </div>
+          </div>
+          <div class="floral-sep">⸻✿⸻</div>
+          <div class="hero-invite-text">joyfully invite you to celebrate</div>
+          <div class="section-divider" style="font-size: 16px; margin-top: 8px">
+            our union of souls
+          </div>
+          <div class="floral-sep">✦ ❀ ✦</div>
+        </div>
+      </section>
+
+      <!-- SAVE THE DATE -->
+      <section id="save-date" style="">
+        <div class="std-inner fade-up">
+          <div class="std-label">Mark Your Calendar</div>
+          <div class="section-divider">⸻✦⸻</div>
+          <div class="std-heading">Save<br />The Date</div>
+          <div class="floral-deco">✿ ❀ ✾ ❀ ✿</div>
+          <div class="std-date">26 November 2026</div>
+          <div class="std-sub">Thursday</div>
+          <div class="bell-row">🔔</div>
+          <div class="floral-deco">❧ ✦ ❧</div>
+          <div
+            style="
+              font-family: &quot;Cormorant Garamond&quot;, serif;
+              font-size: 18px;
+              color: var(--maroon);
+              font-style: italic;
+              letter-spacing: 2px;
+            "
+          >
+            The Bridge Hotel, Kanpur
+          </div>
+        </div>
+      </section>
+
+      <!-- COUNTDOWN -->
+      <section id="countdown">
+        <div class="fade-up">
+          <div class="floral-deco" style="color: rgba(201, 168, 76, 0.4)">
+            ✦ ❧ ✦
+          </div>
+          <div class="ctd-heading">Countdown To The Wedding</div>
+          <div class="ctd-sub">Every moment brings us closer...</div>
+          <div class="ctd-grid">
+            <div class="ctd-card">
+              <span class="ctd-num" id="days">00</span>
+              <div class="ctd-lbl">Days</div>
+            </div>
+            <div class="ctd-card">
+              <span class="ctd-num" id="hours">00</span>
+              <div class="ctd-lbl">Hours</div>
+            </div>
+            <div class="ctd-card">
+              <span class="ctd-num" id="minutes">00</span>
+              <div class="ctd-lbl">Minutes</div>
+            </div>
+            <div class="ctd-card">
+              <span class="ctd-num" id="seconds">00</span>
+              <div class="ctd-lbl">Seconds</div>
+            </div>
+          </div>
+          <div
+            style="
+              margin-top: 30px;
+              font-family: &quot;Dancing Script&quot;, cursive;
+              font-size: 22px;
+              color: rgba(232, 201, 122, 0.5);
+            "
+          >
+            Two souls. One destiny.
+          </div>
+        </div>
+      </section>
+
+      <!-- EVENTS -->
+      <section id="events">
+        <div class="fade-up">
+          <div class="sec-heading">Wedding Celebrations</div>
+          <div class="sec-sub">
+            Join us across five days of joy, music & love
+          </div>
+          <div class="section-divider">⸻✿⸻</div>
+          <div class="events-grid">
+            <!-- HALDI -->
+            <div class="ev-card ev-haldi fade-up">
+              <div class="ev-card-inner">
+                <div class="ev-icon">🌼</div>
+                <div class="ev-header">Haldi</div>
+                <div
+                  class="ev-border"
+                  style="border-color: #f57f17; color: #e65100"
+                >
+                  CEREMONY
+                </div>
+                <div class="ev-detail">
+                  <strong>Date</strong>25 November 2026
+                </div>
+                <div class="ev-detail">
+                  <strong>Time</strong>12:00 PM onwards
+                </div>
+                <div class="ev-detail">
+                  <strong>Venue</strong>The Bridge Hotel, Kanpur
+                </div>
+                <div class="ev-detail"><strong>Dress Theme</strong>Pink</div>
+
+                <div class="map">
+                  <a
+                    class="map-btn"
+                    href="https://maps.app.goo.gl/zHhcfAqVMFPvmSYD9"
+                    target="_blank"
+                    >📍 View on Maps
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- MEHENDI -->
+            <div class="ev-card ev-mehendi fade-up">
+              <div class="ev-card-inner">
+                <div class="ev-icon">🌿</div>
+                <div class="ev-header">Mehendi</div>
+                <div
+                  class="ev-border"
+                  style="border-color: #388e3c; color: #1b5e20"
+                >
+                  CEREMONY
+                </div>
+                <div class="ev-detail">
+                  <strong>Date</strong>25 November 2026
+                </div>
+                <div class="ev-detail">
+                  <strong>Time</strong>5:00 PM onwards
+                </div>
+                <div class="ev-detail">
+                  <strong>Venue</strong>The Bridge Hotel, Kanpur
+                </div>
+                <div class="ev-detail"><strong>Dress Theme</strong>Green</div>
+                <a
+                  class="map-btn"
+                  href="https://maps.google.com"
+                  target="_blank"
+                  >📍 View on Maps</a
+                >
+              </div>
+            </div>
+
+            <!-- SANGEET -->
+            <!-- <div class="ev-card ev-sangeet fade-up">
+              <div class="ev-card-inner">
+                <div class="stars" id="sangeetStars"></div>
+                <div class="ev-icon">🎶</div>
+                <div class="ev-header">Sangeet</div>
+                <div class="ev-border">MUSICAL EVENING</div>
+                <div class="ev-detail">
+                  <strong>Date</strong>16 December 2026
+                </div>
+                <div class="ev-detail">
+                  <strong>Time</strong>7:00 PM onwards
+                </div>
+                <div class="ev-detail">
+                  <strong>Venue</strong>Royal Banquet, Delhi
+                </div>
+                <div class="ev-detail">
+                  <strong>Dress Theme</strong>Royal Blue & Gold
+                </div>
+                <a
+                  class="map-btn"
+                  href="https://maps.google.com"
+                  target="_blank"
+                  >📍 View on Maps</a
+                >
+              </div>
+            </div> -->
+
+            <!-- WEDDING -->
+            <div class="ev-card ev-wedding fade-up">
+              <div class="ev-card-inner">
+                <div class="ev-icon">🔱</div>
+                <div class="ev-header">Wedding</div>
+                <div class="ev-border">MAIN CEREMONY</div>
+                <div class="ev-detail">
+                  <strong>Date</strong>26 November 2026
+                </div>
+                <div class="ev-detail"><strong>Time</strong>9:30 PM</div>
+                <div class="ev-detail">
+                  <strong>Venue</strong>The Bridge Hotel, Kanpur
+                </div>
+                <div class="ev-detail" style="visibility: hidden;">
+                  <strong>Dress Theme</strong>Traditional Red & Gold
+                </div>
+                <a
+                  class="map-btn"
+                  href="https://maps.google.com"
+                  target="_blank"
+                  >📍 View on Maps</a
+                >
+              </div>
+            </div>
+
+            <!-- RECEPTION -->
+            <!-- <div
+              class="ev-card ev-reception fade-up"
+              style="
+                grid-column: 1/-1;
+                max-width: 420px;
+                margin: 0 auto;
+                width: 100%;
+              "
+            >
+              <div class="ev-card-inner" style="position: relative">
+                <div class="stars" id="recepStars"></div>
+                <div class="ev-icon" style="font-size: 40px">🌟</div>
+                <div class="ev-header" style="font-size: 26px; color: #e8eaf6">
+                  Reception
+                </div>
+                <div class="ev-border">GRAND CELEBRATION</div>
+                <div class="ev-detail">
+                  <strong style="color: #607d8b">Date</strong>18 December 2026
+                </div>
+                <div class="ev-detail">
+                  <strong style="color: #607d8b">Time</strong>7:00 PM onwards
+                </div>
+                <div class="ev-detail">
+                  <strong style="color: #607d8b">Venue</strong>Hotel Taj, New
+                  Delhi
+                </div>
+                <div class="ev-detail">
+                  <strong style="color: #607d8b">Dress Theme</strong
+                  >Indo-Western
+                </div>
+                <div
+                  style="
+                    font-family: &quot;Dancing Script&quot;, cursive;
+                    font-size: 20px;
+                    color: rgba(176, 190, 197, 0.6);
+                    margin-top: 16px;
+                    font-style: italic;
+                  "
+                >
+                  ✦ An evening under the stars ✦
+                </div>
+                <a
+                  class="map-btn"
+                  href="https://maps.google.com"
+                  target="_blank"
+                  >📍 View on Maps</a
+                >
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- FAMILY -->
+      <section id="family">
+        <div class="fade-up">
+          <div class="sec-heading">With Blessings Of</div>
+          <div class="sec-sub" style="color: rgba(232, 201, 122, 0.7)">
+            Our beloved families
+          </div>
+          <div class="section-divider" style="color: var(--gold-light)">
+            ⸻❧⸻
+          </div>
+          <div class="family-grid">
+            <div class="fam-card fade-up">
+              <div class="fam-side-label">Bride's Side</div>
+              <div class="fam-card-title">Nigam Family</div>
+              <div class="fam-name">Smt. Dolly Nigam & Shri Ashutosh Nigam</div>
+              <div class="fam-sep">⸻ ✦ ⸻</div>
+            </div>
+
+            <div class="fam-card fade-up">
+              <div class="fam-side-label">Groom's Side</div>
+              <div class="fam-card-title">Saxena Family</div>
+              <div class="fam-name">
+                Smt. Shashibha Saxena & Shri Sunil Kumar Saxena
+              </div>
+              <div class="fam-sep">⸻ ✦ ⸻</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RSVP -->
+      <section id="rsvp">
+        <div class="fade-up">
+          <div class="sec-heading">RSVP</div>
+          <div class="section-divider">⸻✦⸻</div>
+          <div class="rsvp-inner">
+            <span class="corner-orn tl" style="font-size: 20px">❧</span>
+            <span class="corner-orn tr" style="font-size: 20px">❧</span>
+            <span class="corner-orn bl" style="font-size: 20px">❧</span>
+            <span class="corner-orn br" style="font-size: 20px">❧</span>
+
+            <div class="rsvp-content">
+              <h2 class="rsvp-title">We'd love your presence!</h2>
+
+              <div class="blessing-card">
+                <h3>With Best Compliments From</h3>
+                <p>Smt. Shikha Nigam</p>
+                <p>Shri Atul Nigam</p>
+              </div>
+
+              <div class="blessing-card">
+                <h3>Warm Regards</h3>
+                <p>Tanishka Nigam</p>
+                <p>Bhavya Nigam</p>
+                <p>Harshita Nigam</p>
+              </div>
+
+              <div class="blessing-card">
+                <h3>Contact Details</h3>
+                <p>+91 99999 99999</p>
+                <p>+91 99999 99999</p>
+                <!-- <p>+91 83170 79493</p>
+                <p>+91 91400 64121</p> -->
+              </div>
+            </div>
+            <div class="success-msg" id="successMsg">
+              <div class="success-icon">🌸</div>
+              <div class="success-text">Thank You For Your Response!</div>
+              <div class="success-sub">
+                We are overjoyed with your reply.<br />See you at the
+                celebrations!
+              </div>
+              <div
+                style="
+                  margin-top: 24px;
+                  font-size: 28px;
+                  letter-spacing: 8px;
+                  color: var(--gold);
+                "
+              >
+                ✦ ❀ ✦
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer>
+        <div
+          class="floral-sep"
+          style="color: rgba(201, 168, 76, 0.5); margin-bottom: 16px"
+        >
+          ✦ ❧ ✦
+        </div>
+        <div class="foot-names">Ashruti ❤ Shubham</div>
+        <div class="foot-date">26 · 11 · 2026</div>
+        <div
+          style="
+            color: rgba(201, 168, 76, 0.5);
+            font-size: 18px;
+            margin-bottom: 16px;
+          "
+        >
+          ⸻✿⸻
+        </div>
+        <div class="foot-bottom">TOGETHER FOREVER · WITH LOVE & BLESSINGS</div>
+      </footer>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
